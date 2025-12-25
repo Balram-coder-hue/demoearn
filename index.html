@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DemoEarn</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  input {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .message {
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="login-box">
+  <h2>DemoEarn Login</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button onclick="showMessage()">Login</button>
+  <div class="message" id="message"></div>
+</div>
+
+<script>
+  function showMessage() {
+    document.getElementById('message').innerText = "This is a demo website. No real login.";
+  }
+</script>
+</body>
+</html>
